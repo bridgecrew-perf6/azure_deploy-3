@@ -24,7 +24,7 @@ stages:
           - task: Docker@2
             displayName: Build an image
             inputs:
-              containerRegistry: "azcr"
+              containerRegistry: "opencertif"
               repository: "azure_deploy"
               command: "buildAndPush"
               Dockerfile: "**/Dockerfile"
